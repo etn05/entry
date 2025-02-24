@@ -3,6 +3,7 @@ body {
     background-color: #ffffff;
     color: #000000;
     margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .landing {
@@ -125,9 +126,73 @@ a:link {
   }
   
   a:hover {
-    color: rgb(13, 255, 0);
+    color: rgb(61, 165, 55);
+    opacity: 100%;
   }
   
   a:active {
-    color: rgb(71, 137, 78);
+    color: rgb(0, 64, 6);
+    opacity: 100%; 
   }
+
+  .img1 {
+   max-width: 100%;
+  }
+
+  /* entry 1 styling */
+  .homeicon {
+    width: 50px;
+    margin: 10px;
+  }
+  
+  .homeicon:hover {
+    opacity: 50%;
+  }
+
+  .homeicon:active {
+    opacity: 100%;
+  }
+  .entry1poem {
+    position: relative; /* Ensures the frame is positioned relative to this container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the poem horizontally */
+    justify-content: center; /* Centers vertically */
+    min-height: 100vh; /* Ensures it takes up the full viewport height */
+    text-align: left;
+    padding: 50px; /* Adjust padding to fit inside the frame */
+}
+
+.frame {
+    position: absolute;
+    width: 70%; 
+    height: 40%; 
+    object-fit: cover; 
+    z-index: 5; 
+    pointer-events: none; 
+}
+
+.entry1body {
+        /* background: url('../images/thing1.png') no-repeat center center fixed;  */
+        background-size: 50%;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.thing1 {
+    width: 50%;
+    position: absolute;
+    height: 40%; 
+    object-fit: cover; 
+    z-index: 5; 
+    pointer-events: none; 
+}
+
+.runrun {
+    width: 100px;
+    margin: 5px
+}
+
+.runningman {
+    z-index: -100;
+}
